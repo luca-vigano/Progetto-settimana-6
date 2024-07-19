@@ -1,27 +1,99 @@
 <!doctype html>
 <html lang="it">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body class="bg-black">
-    <nav>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <img src="assets/img/netflix_logo.png" alt="scritta netflix" style="width: 150px;">
-                </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="bg-black">
+  <nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <img src="assets/img/netflix_logo.png" alt="scritta netflix" style="width: 150px;">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="container border-bottom w-75 w-lg-50">
+      <div class="row"></div>
+      <div class="col text-light fs-1 w-50">Edit Profile</div>
+    </div>
+
+    <div class="container w-75 w-lg-50 mt-4">
+      <div class="row">
+        <div class="col-4">
+          <img src="assets/img/avatar.png" alt="immagine profilo" style="width: 100px;">
+        </div>
+        <div class="col-8 text-light">
+          <div class="row text-light">
+            <div class="col-12 bg-secondary-emphasis pb-3">Strive Student</div>
+            <div class="col-12">Lenguage:</div>
+            <div class="col-12 border-bottom border-light pb-3">
+              <div class="btn-group">
+                <button class="btn btn-black text-light border border-light btn-sm dropdown-toggle mt-2 px-3"
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lenguage
+                </button>
+                <ul class="dropdown-menu">
+                  <li>english</li>
+                  <li>italian</li>
+                </ul>
+              </div>
             </div>
+            <div class="col-12 pb-2 fs-5 mt-3">Maturity Setting:</div>
+            <div class="col-12 pb-2">ALL MATURITY RATINGS</div>
+            <div class="col-12 pb-2">Show titles of all maturity ratings for this profile.</div>
+            <div class="col-12 pb-2 border-bottom border-light pb-4">
+              <button type="button"
+                class="btn btn-black text-light border-bottom border-light btn-sm px-4 mt-2">EDIT
+              </button>
+            </div>
+            <div class="col-12 text-light fs-5 mt-3">Autoplay controls</div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Autoplay next episode in a series on all devices.
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Autoplay previews while browsing on all devices.
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
-    </nav>
-    <main>
-        <div class="container w-75">
-            <div class="row"></div>
-            <div class="col text-light fs-1">Edit Profile</div>
+      </div>
+    </div>
+
+    <div class="container w-75 border-light border-top pt-4">
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-light">SAVE</button>
         </div>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+        <div class="col-3">
+          <button type="button" class="btn btn-black text-light border-light">CANCEL</button>
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn btn-black text-light border-light">DELETE PROFILE</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
